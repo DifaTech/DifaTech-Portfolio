@@ -19,30 +19,31 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
 
 </head>
 
 <body class="text-gray-300 font-light">
     <canvas id="my-space" class="fixed top-0 bottom-0 left-0 right-0"></canvas>
-    <div id="wrapper" class="max-w-screen-lg w-screen h-screen relative">
+    <div id="wrapper" class="max-w-screen-lg w-screen h-screen relative overflow-hidden">
         <nav class="fixed top-0 left-0 right-0  bg-gray-800/80 shadow text-slate-300 ">
             <div class="max-w-screen-lg mx-auto  flex h-14">
                 <span class="flex-1"></span>
                 <ul class="flex justify-around items-center">
                     <li class="px-6">
-                        <span class="text-amber-400">&#8544;.</span>
+                        <span class="text-teal-400">&#8544;.</span>
                         <a href="#about" class="nav-link text-sm hover:text-amber-300 transition-all" onclick="changeSection('about')">About Me</a>
                     </li>
                     <li class="px-6">
-                        <span class="text-amber-400">&#8545;.</span>
+                        <span class="text-teal-400">&#8545;.</span>
                         <a class="nav-link text-sm hover:text-amber-300" href="#skills" onclick="changeSection('skills')">Skills</a>
                     </li>
                     <li class="px-6">
-                        <span class="text-amber-400">&#8546;.</span>
+                        <span class="text-teal-400">&#8546;.</span>
                         <a class="nav-link text-sm hover:text-amber-300" href="#projects" onclick="changeSection('projects')">Projects</a>
                     </li>
                     <li class="px-6">
-                        <span class="text-amber-400">&#8547;.</span>
+                        <span class="text-teal-400">&#8547;.</span>
                         <a class="nav-link text-sm hover:text-amber-300" href="#contact" onclick="changeSection('contact')">Contact</a>
                     </li>
                 </ul>
@@ -50,7 +51,7 @@
 
         </nav>
         <section id="about" class="section w-screen h-screen flex justify-center items-center ">
-            <div class="p-8 bg-slate-600/80 rounded-xl">
+            <div class="p-8 bg-slate-800/80 rounded-xl">
                 <!-- Profile Image -->
                 <div class="w-40 h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 rounded-full overflow-hidden shadow-lg">
                     <img src="your-photo.jpg" alt="Your Name" class="w-full h-full object-cover">
@@ -58,7 +59,7 @@
 
                 <!-- Introduction & Call to Actions -->
                 <div class="text-center lg:text-left lg:ml-10 max-w-lg">
-                    <h1 class="text-3xl md:text-4xl font-bold mt-6 lg:mt-0">Hi, I'm <span class="text-blue-400">DifaTech</span> 👋</h1>
+                    <h1 class="text-3xl md:text-4xl font-bold mt-6 lg:mt-0">Hi, I'm <span class="text-sky-400">DifaTech</span> 👋</h1>
                     <p class="mt-3 text-gray-300 text-lg text-justify">
                         a Software Engineer who loves crafting digital experiences. From frontend magic to backend logic, I turn ideas into powerful web applications. Let’s build something great together!.
                     </p>

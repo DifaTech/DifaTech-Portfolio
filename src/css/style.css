@@ -722,6 +722,14 @@ video {
   background-color: rgb(71 85 105 / 0.8);
 }
 
+.bg-slate-800\/80 {
+  background-color: rgb(30 41 59 / 0.8);
+}
+
+.bg-slate-800\/60 {
+  background-color: rgb(30 41 59 / 0.6);
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -799,6 +807,26 @@ video {
 .text-slate-300 {
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity, 1));
+}
+
+.text-sky-400 {
+  --tw-text-opacity: 1;
+  color: rgb(56 189 248 / var(--tw-text-opacity, 1));
+}
+
+.text-teal-400 {
+  --tw-text-opacity: 1;
+  color: rgb(45 212 191 / var(--tw-text-opacity, 1));
+}
+
+.text-cyan-400 {
+  --tw-text-opacity: 1;
+  color: rgb(34 211 238 / var(--tw-text-opacity, 1));
+}
+
+.text-sky-300 {
+  --tw-text-opacity: 1;
+  color: rgb(125 211 252 / var(--tw-text-opacity, 1));
 }
 
 .shadow {

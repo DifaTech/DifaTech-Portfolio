@@ -6,7 +6,7 @@ let screen,
     starsElements,cloudsElements,
     requestAnimation;
 let  starsParams = { 
-        speed: 10,
+        speed: 20,
         number: 400,
         extinction: 0.7,
         dir : 'up'
