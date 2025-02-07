@@ -1,23 +1,14 @@
 // DOM selectors
 const bgSpace = document.getElementById('my-space');
 const bgSpaceCtx = bgSpace.getContext('2d');
-//var cloudImage = new Image(150,80);
-//cloudImage.onload = Cloud;
-//cloudImage.src='./img/clouds.png';
-// global variables
+
 let screen,
     starsElements,cloudsElements,
     requestAnimation;
 let  starsParams = { 
-        speed: 20, 
-        number: 500, 
-        extinction: 1,
-        dir : 'up'
-    };
-    let cloudParams = { 
-        speed: 50, 
-        number: 100, 
-        extinction: 3,
+        speed: 10,
+        number: 400,
+        extinction: 0.7,
         dir : 'up'
     };
 init();
@@ -90,7 +81,7 @@ function Star() {
         y = y + screen.c.h;
         rad =  bgSpace.width / this.z;
 
-        opacity = (rad > starsParams.extinction) ? 0.4 * (3 - rad / starsParams.extinction) : 0.4;
+        opacity = (rad > starsParams.extinction) ? 0.5 * (3 - rad / starsParams.extinction) : 0.4;
 
         bgSpaceCtx.beginPath();
         bgSpaceCtx.fillStyle = "rgba(255, 255, 2255, " + opacity + ")";
@@ -119,11 +110,6 @@ function init() {
     for (let i = 0; i < starsParams.number; i++) {
         starsElements[i] = new Star();        
     }
-    /*
-    for (let i = 0; i < cloudParams.number; i++) {
-        cloudsElements[i] = new Cloud();      
-    }
-    */
 }
 
 // redraw the frame
@@ -138,11 +124,6 @@ function load() {
         s.show();
         s.moveStar();
     });
-    /*
-    cloudsElements.forEach(function (s) {
-        s.show();
-    });    
-    */
     requestAnimation = window.requestAnimationFrame(load) ;
        
 }
@@ -160,9 +141,8 @@ function move(d,t = 800) {
     
     let defaultSpeed = starsParams.speed;    
     let speed = Math.floor((screen.w + screen.h) / 2);
-    //console.log('spped = '+speed);
     starsParams.dir = d;
-    starsParams.speed = (d == 'forward' || d == 'back') ? speed * 3 :speed;    
+    starsParams.speed = (d === 'forward' || d === 'back') ? speed * 3 :speed;
     setTimeout(() => {
         starsParams.speed = defaultSpeed;
     },t );

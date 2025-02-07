@@ -1,21 +1,33 @@
 {
   "name": "difatech-portfolio",
   "version": "1.0.0",
-  "main": "tailwind.config.js",
+  "description": "A personal space where I present my skills, projects, and experience as a software engineer.",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DifaTech/DifaTech-Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "DifaTech",
+    "tailwind",
+    "space"
+  ],
+  "author": "Difa Tech",
   "license": "ISC",
-  "description": "",
+  "bugs": {
+    "url": "https://github.com/DifaTech/DifaTech-Portfolio/issues"
+  },
+  "homepage": "https://github.com/DifaTech/DifaTech-Portfolio#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.5.1",
-    "tailwindcss-cli": "^0.1.2"
+    "tailwindcss": "^3.4.17"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "^4.0.4",
-    "tailwindcss": "^4.0.4"
+    "animate.css": "^4.1.1"
   }
 }

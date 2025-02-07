@@ -1,0 +1,25 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Fira Code", monospace; /* Coding Vibe */
+}
+
+nav li {
+    font-family: "Exo", sans-serif; /* Futuristic Look */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+.about {
+    transform: scale(1); /* Initial scale */
+    opacity: 0; /* Initially invisible */
+    transition: transform 0.6s ease, opacity 0.6s ease; /* Smooth transition */
+}
+
+.about.zoomed {
+    transform: scale(1.1); /* Zoom-in effect */
+    opacity: 1; /* Make visible */
+}
