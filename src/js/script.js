@@ -3,12 +3,14 @@ let currentSection = 'about'; // Default section
 let animation = {
     about: {
         classIn :'animate__zoomIn',
-        classOut :'animate__zoomIn',
+        classOut :'animate__slideOutRight',
         moveDirection  : 'back'
 
     },
     skills: {
         classIn : 'animate__slideInLeft',
+        classOut :'animate__zoomOut',
+        moveDirection  : 'right'
     },
 }
 function changeSection(sectionId) {

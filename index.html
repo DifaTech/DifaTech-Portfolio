@@ -25,7 +25,7 @@
 
 <body class="text-gray-300 font-light">
     <canvas id="my-space" class="fixed top-0 bottom-0 left-0 right-0"></canvas>
-    <div id="wrapper" class="max-w-screen-lg w-screen h-screen relative overflow-hidden">
+    <div id="wrapper" class=" w-screen h-screen relative overflow-hidden">
         <nav class="fixed top-0 left-0 right-0  bg-gray-800/80 shadow text-slate-300 ">
             <div class="max-w-screen-lg mx-auto  flex h-14">
                 <span class="flex-1"></span>
@@ -50,48 +50,66 @@
             </div>
 
         </nav>
-        <section id="about" class="section w-screen h-screen flex justify-center items-center ">
-            <div class="p-8 bg-slate-800/80 rounded-xl">
-                <!-- Profile Image -->
-                <div class="w-40 h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 rounded-full overflow-hidden shadow-lg">
-                    <img src="your-photo.jpg" alt="Your Name" class="w-full h-full object-cover">
-                </div>
+        <div class="max-w-screen-lg mx-auto flex justify-center items-center">
+            <section id="about" class="section w-screen h-screen flex justify-center items-center ">
+                <div class="p-8 bg-slate-800/80 rounded-xl">
+                    <!-- Profile Image -->
+                    <div class="w-40 h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 rounded-full overflow-hidden shadow-lg">
+                        <img src="your-photo.jpg" alt="Your Name" class="w-full h-full object-cover">
+                    </div>
 
-                <!-- Introduction & Call to Actions -->
-                <div class="text-center lg:text-left lg:ml-10 max-w-lg">
-                    <h1 class="text-3xl md:text-4xl font-bold mt-6 lg:mt-0">Hi, I'm <span class="text-sky-400">DifaTech</span> 👋</h1>
-                    <p class="mt-3 text-gray-300 text-lg text-justify">
-                        a Software Engineer who loves crafting digital experiences. From frontend magic to backend logic, I turn ideas into powerful web applications. Let’s build something great together!.
-                    </p>
+                    <!-- Introduction & Call to Actions -->
+                    <div class="text-center lg:text-left lg:ml-10 max-w-lg">
+                        <h1 class="text-3xl md:text-4xl font-bold mt-6 lg:mt-0">Hi, I'm <span class="text-sky-400">DifaTech</span> 👋</h1>
+                        <p class="mt-3 text-gray-300 text-lg text-justify">
+                            a Software Engineer who loves crafting digital experiences. From frontend magic to backend logic, I turn ideas into powerful web applications. Let’s build something great together!.
+                        </p>
 
-                    <!-- Call to Action Buttons -->
-                    <div class="mt-5 flex flex-col sm:flex-row justify-end gap-4">
-                        <a href="#contact" class="bg-blue-500 hover:bg-blue-700 text-slate-200  py-2 px-6 rounded-lg transition">
-                            📩 Contact Me
-                        </a>
-                        <a href="your-cv.pdf" download class="bg-gray-700 hover:bg-gray-900 text-slate-200  py-2 px-6 rounded-lg transition">
-                            📄 Download CV
-                        </a>
+                        <!-- Call to Action Buttons -->
+                        <div class="mt-5 flex flex-col sm:flex-row justify-end gap-4">
+                            <a href="#contact" class="bg-blue-500 hover:bg-blue-700 text-slate-200  py-2 px-6 rounded-lg transition">
+                                📩 Contact Me
+                            </a>
+                            <a href="your-cv.pdf" download class="bg-gray-700 hover:bg-gray-900 text-slate-200  py-2 px-6 rounded-lg transition">
+                                📄 Download CV
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        </section>
-        <div id="skills" class="section w-screen h-screen flex justify-center items-center" >
-            <div class="border-2 border-gray-50 p-4 ">
-              Skills content...
+            </section>
+            <section id="skills" class="section w-screen h-screen flex justify-center items-center" >
+                <div class="p-8 bg-slate-800/80 rounded-xl">
+                    <h2>My Skills</h2>
+                    <p>As a web developer with a diverse set of skills, I have experience in various technical fields including database management, design, and open-source solutions:</p>
+
+                    <ul>
+                        <li><strong>Angular</strong>: Advanced knowledge of Angular for building dynamic web applications.</li>
+                        <li><strong>SQL Server & PostgreSQL</strong>: Extensive experience migrating complex databases between MSSQL and PostgreSQL in production environments, ensuring minimal downtime and data integrity.</li>
+                        <li><strong>Git & GitHub</strong>: Proficient in using Git for version control and GitHub for collaboration and code sharing.</li>
+                        <li><strong>PHP Slim Framework</strong>: Comfortable with developing lightweight and scalable web APIs using the Slim Framework.</li>
+                        <li><strong>Apache</strong>: Knowledge of Apache server management and configuration for hosting web applications.</li>
+                        <li><strong>Open-Source Solutions</strong>: Experienced in deploying and adapting open-source solutions for companies, customizing them as needed to fit specific business requirements.</li>
+                        <li><strong>Design (Photoshop)</strong>: Skilled in designing web icons and graphical elements using Photoshop, and often assist colleagues with CSS tricks and visual improvements for web projects.</li>
+                    </ul>
+
+                    <p>In addition to technical skills, I enjoy contributing to the team through creative design work and sharing knowledge on best practices, whether it's optimizing workflows or helping with CSS design challenges.</p>
+
+                    <p>I'm always excited to learn and grow as a developer. The world of web development is vast, and I believe in staying ahead of trends and best practices to provide scalable and high-performance solutions.</p>
+                </div>
+            </section>
+            <div id="projects" class="section w-screen h-screen flex justify-center items-center">
+                <div class="border-2 border-gray-50 p-4 ">
+                    Projects content...
+                </div>
+            </div>
+            <div id="contact" class="section w-screen h-screen flex justify-center items-center">
+                <div class="border-2 border-gray-50 p-4 ">
+                    Contact content...
+                </div>
             </div>
         </div>
-        <div id="projects" class="section w-screen h-screen flex justify-center items-center">
-            <div class="border-2 border-gray-50 p-4 ">
-                Projects content...
-            </div>
-        </div>
-        <div id="contact" class="section w-screen h-screen flex justify-center items-center">
-            <div class="border-2 border-gray-50 p-4 ">
-                Contact content...
-            </div>
-        </div>
+
     </div>
     <script src="src/js/canvas.js"></script>
     <script src="src/js/script.js"></script>
