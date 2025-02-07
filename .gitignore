@@ -1,0 +1,4 @@
+/.idea
+node_modules/*
+src/css/output.css
+package-lock.json
